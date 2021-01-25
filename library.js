@@ -101,15 +101,17 @@ function show1() {
     });
     // fun display data in table
     for (var i = 0; i < array1.length; i++) {
-        if(array1[i]== null){
-            continue;}
-        else{
-        let uiString = `<tr><th scope="row">${i + 1}</th>
+        if (array1[i] == null) {
+            continue;
+        }
+        else {
+            let uiString = `<tr><th scope="row">${i + 1}</th>
          <td>${array1[i]}</td>
          <td>${array2[i]}</td>
          <td>${array3[i]}</td> </tr>`
-        cardBody.innerHTML += uiString
-    }}
+            cardBody.innerHTML += uiString
+        }
+    }
 };
 function show() {
     let cardBody = document.getElementById("card-body");
@@ -144,15 +146,14 @@ addbook.addEventListener("click", function () {
 
     let book = new Book(bookname, auther, typed);
 
-    data.push(bookname)
-    localStorage.setItem("bookname", JSON.stringify(data))
-    writer.push(auther)
-    localStorage.setItem("auther", JSON.stringify(writer))
-    tybook.push(typed)
-    localStorage.setItem("type", JSON.stringify(tybook))
-
     let display = new Display();
     if (display.validate(bookname, auther)) {
+        data.push(bookname)
+        localStorage.setItem("bookname", JSON.stringify(data))
+        writer.push(auther)
+        localStorage.setItem("auther", JSON.stringify(writer))
+        tybook.push(typed)
+        localStorage.setItem("type", JSON.stringify(tybook))
         show();
         display.clear();
         display.showmsg('success', 'Your book has been added sucessfully. For more Information please check Our Library section')
