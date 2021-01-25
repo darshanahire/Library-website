@@ -2,18 +2,35 @@
     margin: 0;
     padding: 0;
 }
-#container{
-    margin-top:40px;
+@media screen and (max-width: 550px){
+    /* #container1{ 
+        margin-left: 0px;
+    } */
+    #libraryForm{
+    width: 300px;}
+    #container2{
+    margin-left: -100px;}
+}
+
+
+@media screen and (min-width:550px) and (max-width:800px){
+    #libraryForm{
+    width: 300px;}
+    }
+
+#container1{
+    margin-top:10px;
     display: block;
-    /* border: 2px solid black; */
-    width:500px;
-    position: relative;;
+    margin: 50px auto 50px;
+    padding: 10px;
+    width:30%;
+    /* position: relative;
     top: 20%;
     left: 30%;
-    transform: translate(-50,-50);
+    transform: translate(-50,-50); */
 }
 #bookname,#auther{
-    width: 500px;
+    text-align: center;
 }
 #addbtn{
     text-align: left;
