@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY.com</title>
+    <link rel="stylesheet" href="library.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../bootstrap/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LIBRARY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active names" id="names" aria-current="page" href="index.html">Add Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active names" id="names" aria-current="page" href="#">Our
+                            Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active names" id="names" aria-current="page" href="getbook.html">Get Book</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="mainlib"><button type="button" class="btn btn-outline-success mainlib" id="addbook">Add Book</button>
+    </div>
+    <div class="mainlib"><button type="button" class="btn btn-outline-success" id="getbook">Get Book</button>
+    </div>
+    <h2 style="text-align: center;" class="fw-lighter">Welcome to Our Library All Avilable Books are Here</h2>
+    <br>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Book Name</th>
+                <th scope="col">Auther Of Book</th>
+                <th scope="col">Type Of Book</th>
+            </tr>
+        </thead>
+        <tbody id="card-body">
+        </tbody>
+    </table>
+
+</body>
+<script src="library.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+<!-- <script src="../bootstrap/bootstrap.min.js"></script> -->
+
+</html>

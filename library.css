@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    margin-top:40px;
+    display: block;
+    /* border: 2px solid black; */
+    width:500px;
+    position: relative;;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50,-50);
+}
+#bookname,#auther{
+    width: 500px;
+}
+#addbtn{
+    text-align: left;
+}
+/* #names:link{
+    color: rgb(224, 150, 150);
+} */
+#card-container{
+    margin-top: 30px;
+}
+.mainlib{
+    display: none;
+}
