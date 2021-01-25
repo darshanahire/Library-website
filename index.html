@@ -36,66 +36,68 @@
       </div>
     </nav>
     <div id="message"></div>
-    <div id="container">
-      <form id="libraryForm">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Book Name</label>
-          <input type="text" class="form-control" id="bookname">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Auther</label>
-          <input type="text" class="form-control" id="auther">
-        </div>
-        <br>
-        <select class="form-select" id="type" aria-label="Default select example" onchange="typeofBook();">
-          <option selected>Select Type of Book</option>
-          <option value=1>Programing Book</option>
-          <option value=2>Fiction Book</option>
-          <option value=3>Cooking Book</option>
-        </select>
-        <script>
-          function typeofBook() {
-            var type = document.getElementById("type")
-
-            if (type.value == 1) {
-              typed = "Programing"
-            }
-            if (type.value == 2) {
-              typed = "Fiction"
-            }
-            if (type.value == 3) {
-              typed = "Cooking"
-            }
-          }</script>
-        <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <div class="mainlib"><button type="button" class="btn btn-outline-success" id="getbook">Get Book</button>
+    <div id="container1">
+      <div id="container2">
+        <form id="libraryForm">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Book Name</label>
+            <input type="text" class="form-control" id="bookname">
           </div>
-          <button type="button" class="btn btn-outline-success" id="addbook">Add Book</button>
-        </div>
-      </form>
-    </div>
-  </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Auther</label>
+            <input type="text" class="form-control" id="auther">
+          </div>
+          <br>
+          <select class="form-select" id="type" aria-label="Default select example" onchange="typeofBook();">
+            <option selected>Select Type of Book</option>
+            <option value=1>Programing Book</option>
+            <option value=2>Fiction Book</option>
+            <option value=3>Cooking Book</option>
+          </select>
+          <script>
+            function typeofBook() {
+              var type = document.getElementById("type")
 
-  <div class="mainlib">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Book Name</th>
-          <th scope="col">Auther</th>
-          <th scope="col">Type</th>
-        </tr>
-      </thead>
-      <tbody id="card-body">
-        <tr>
-          <td id="id1"></td>
-          <td id="id2"></td>
-          <td id="id3"></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+              if (type.value == 1) {
+                typed = "Programing"
+              }
+              if (type.value == 2) {
+                typed = "Fiction"
+              }
+              if (type.value == 3) {
+                typed = "Cooking"
+              }
+            }</script>
+          <br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <div class="mainlib"><button type="button" class="btn btn-outline-success" id="getbook">Get Book</button>
+            </div>
+            <button type="button" class="btn btn-outline-success" id="addbook">Add Book</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="mainlib">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Book Name</th>
+            <th scope="col">Auther</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody id="card-body">
+          <tr>
+            <td id="id1"></td>
+            <td id="id2"></td>
+            <td id="id3"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </body>
 <script src="library.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
