@@ -7,7 +7,7 @@
         margin-left: 0px;
     } */
     #libraryForm{
-    width: 300px;}
+    width: 330px;}
     #container2{
     margin-left: -100px;}
 }
@@ -15,7 +15,7 @@
 
 @media screen and (min-width:550px) and (max-width:800px){
     #libraryForm{
-    width: 320px;}
+    width: 330px;}
     }
 
 #container1{
